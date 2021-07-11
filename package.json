@@ -4,14 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@mediapipe/holistic": "^0.4.1625245411",
+    "@mediapipe/selfie_segmentation": "^0.1.1622680987",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "skyway-js": "^4.4.1"
   },
   "devDependencies": {
     "@types/react": "17.0.14",
